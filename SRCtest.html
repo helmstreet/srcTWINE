@@ -199,7 +199,7 @@ right align
 &lt;script&gt;$(&#39;html&#39;).removeClass(&#39;flow&#39;);&lt;/script&gt;
 (if: $flow is true)[&lt;script&gt;$(&#39;html&#39;).addClass(&#39;flow&#39;);&lt;/script&gt;]
 }</tw-passagedata><tw-passagedata pid="7" name="Replace me" tags="" position="574,221" size="100,100">(if: $cha is 0)[(set: $challenge to &quot;unskilled&quot;)](else-if: $cha is 1)[(set: $challenge to &quot;almost capable&quot;)](else-if: $cha is 2)[(set: $challenge to &quot;moderately skilled&quot;)](else-if: $cha is 3)[(set: $challenge to &quot;surprisingly capable&quot;)](else-if: $cha is 4)[(set: $challenge to &quot;accomplished&quot;)](else-if: $cha is 5)[(set: $challenge to &quot;expertly skilled&quot;)]
-</tw-passagedata><tw-passagedata pid="8" name="States" tags="" position="64,619" size="100,100">&#39;&#39;Emotions:&#39;&#39; You perceive yourself as (if: $bal is true)[evenly skilled and challenged, leaving you feeling balanced](else-if: $anx is true)[more challenged than skilled, leaving you feeling anxious](else-if: $bor is true)[more skilled than challenged, leaving you feeling bored].</tw-passagedata><tw-passagedata pid="9" name="PR1 Activities" tags="" position="1084,406" size="100,100">[(either: ...$joyActivities). (one day)]&lt;fun|{
+</tw-passagedata><tw-passagedata pid="8" name="States" tags="" position="64,619" size="100,100">&#39;&#39;Status:&#39;&#39; You perceive yourself as (if: $bal is true)[evenly skilled and challenged, leaving you feeling balanced](else-if: $anx is true)[more challenged than skilled, leaving you feeling anxious](else-if: $bor is true)[more skilled than challenged, leaving you feeling bored].</tw-passagedata><tw-passagedata pid="9" name="PR1 Activities" tags="" position="1084,406" size="100,100">[(either: ...$joyActivities). (one day)]&lt;fun|{
 (click: ?fun)[
 (set: $time to ($time + 1))
 (set: $bor to false)
@@ -1043,8 +1043,7 @@ Well, enough preamble.
 Technological Affordances and Scholarly Practices&#39;&#39;
 
 Jason Helms
-Associate Professor
-TCU
+Associate Professor, TCU
 
 [Introduction]&lt;intro|(click: ?intro)[(goto: &quot;Intro&quot;)]
 
