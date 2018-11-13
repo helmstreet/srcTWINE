@@ -201,7 +201,7 @@ right align
 &lt;script&gt;$(&#39;html&#39;).removeClass(&#39;flow&#39;);&lt;/script&gt;
 (if: $flow is true)[&lt;script&gt;$(&#39;html&#39;).addClass(&#39;flow&#39;);&lt;/script&gt;]
 }</tw-passagedata><tw-passagedata pid="7" name="Replace me" tags="" position="574,221" size="100,100">(if: $cha is 0)[(set: $challenge to &quot;unskilled&quot;)](else-if: $cha is 1)[(set: $challenge to &quot;almost capable&quot;)](else-if: $cha is 2)[(set: $challenge to &quot;moderately skilled&quot;)](else-if: $cha is 3)[(set: $challenge to &quot;surprisingly capable&quot;)](else-if: $cha is 4)[(set: $challenge to &quot;accomplished&quot;)](else-if: $cha is 5)[(set: $challenge to &quot;expertly skilled&quot;)]
-</tw-passagedata><tw-passagedata pid="8" name="States" tags="" position="64,619" size="100,100">&#39;&#39;Emotions:&#39;&#39; You perceive yourself as (if: $bal is true)[evenly skilled and challenged, leaving you feeling balanced](else-if: $anx is true)[more challenged than skilled, leaving you feeling anxious](else-if: $bor is true)[more skilled than challenged, leaving you feeling bored].</tw-passagedata><tw-passagedata pid="9" name="PR1 Activities" tags="" position="1084,406" size="100,100">[(either: ...$joyActivities). (one day)]&lt;fun|{
+</tw-passagedata><tw-passagedata pid="8" name="States" tags="" position="64,619" size="100,100">&#39;&#39;Status:&#39;&#39; You perceive yourself as (if: $bal is true)[evenly skilled and challenged, leaving you feeling balanced](else-if: $anx is true)[more challenged than skilled, leaving you feeling anxious](else-if: $bor is true)[more skilled than challenged, leaving you feeling bored].</tw-passagedata><tw-passagedata pid="9" name="PR1 Activities" tags="" position="1084,406" size="100,100">[(either: ...$joyActivities). (one day)]&lt;fun|{
 (click: ?fun)[
 (set: $time to ($time + 1))
 (set: $bor to false)
@@ -244,14 +244,14 @@ Choose whether you&#39;d like it to be traditional print or include new media el
 &#39;&#39;Commentary&#39;&#39;
 As I mentioned on the last page, this was a difficult decision for me when creating this game. With just two weeks, I was very tempted to default to print. It seemed like it would save so much time. In retrospect, though, the new media option actually made it easier to get done. As you no doubt experienced when playing the game, flow states cause the work to get done much more quickly. 
 
-I wonder if I would have gotten the article written if I&#39;d chosen print. It&#39;s not that flow states are impossible when composing for print. They&#39;re just not encouraged as heavily by the medium itself—to achieve flow in print, I often find myself having to do more active reflection. New media composition makes some of the flow requirements automatic, offering immediate feedback through their interfaces, creating opportunities to increase challenge and skill, and requiring clear goals.
+I wonder if I would have gotten the article written if I&#39;d chosen print. It&#39;s not that flow states are impossible when composing for print. They&#39;re just not encouraged as heavily by the medium itself — to achieve flow in print, I often find myself having to do more active reflection. New media composition makes some of the flow requirements automatic, offering immediate feedback through their interfaces, creating opportunities to increase challenge and skill, and requiring clear goals.
 ]
 [Research]&lt;research|
-(click: ?research)[ (replace: ?research)[As Brown and Simpson argue, &lt;q&gt;Scholarly processes, perhaps humanist ones in particular, are far from linear, involving a dialectic between source materials and scholarly engagement that results in revisiting sources, revising sources, and producing iterative versions of materials as they are refined and revised over time.&lt;/q&gt; It was important that this article not elide the inherently nonlinear nature of traditional scholarship. Nonetheless, print scholarship, digitally enhanced scholarship, and digitally born scholarship are radically different from each other. 
+(click: ?research)[ (replace: ?research)[As Brown and Simpson argue, &lt;q&gt;Scholarly processes, perhaps humanist ones in particular, are far from linear, involving a dialectic between source materials and scholarly engagement that results in revisiting sources, revising sources, and producing iterative versions of materials as they are refined and revised over time&lt;/q&gt; (2014). It was important that this article not elide the inherently nonlinear nature of traditional scholarship. Nonetheless, print scholarship, digitally enhanced scholarship, and digitally born scholarship are radically different from each other. 
 
 One surprising feature of new media scholarship is the immediate feedback it offers. I often joke with my students that if you miss a semi-colon in an essay, it&#39;s a pretty minor error that most people won&#39;t notice. If you miss a semi-colon in your code, it won&#39;t run. That kind of immediate feedback can make new media scholarship really engaging to create.
 
-As Arbuckle and Christie note, &lt;q&gt;Evolving modes of digital scholarly communication change both the field and the players in this process.&lt;/q&gt; They argue that the openness of digital scholarship makes our methods more accessible to a wider audience. But that changes us as much as it changes them.]]</tw-passagedata><tw-passagedata pid="14" name="Print Check" tags="" position="1265,245" size="100,100">{(set: $flowRatio to ($ski / $cha))
+As Arbuckle and Christie note, &lt;q&gt;Evolving modes of digital scholarly communication change both the field and the players in this process&lt;/q&gt; (2015). They argue that the openness of digital scholarship makes our methods more accessible to a wider audience. But that changes us as much as it changes them.]]</tw-passagedata><tw-passagedata pid="14" name="Print Check" tags="" position="1265,245" size="100,100">{(set: $flowRatio to ($ski / $cha))
 }Great! Would you like to create a checklist to keep you on track or just get on to the scholarship itself?
 
 [Create a checklist. (two days)]&lt;check|
@@ -310,10 +310,10 @@ Multimodal scholarship demands clear goals.
 &lt;img src = &quot;goals.JPG&quot; width = &quot;80%&quot; alt = &quot;Photograph of an office wall littered with post-it notes. The words on the notes are illegible. It appears to be a brainstorming tool.&quot;&gt;
 The image above is from an early planning stage for this project. I organized my early thoughts with color-coded post-it notes. I started with blue notes for the traditional components of scholarship: Introductions, Methods, Results, and Discussion. Then I used green for the emotions I wanted to elicit: comfort, confusion, a return to confidence. Then I used yellow notes for interactions and pink for the research behind each element. 
 
-Interestingly, skipping this step really hurt a lot of my playtesters. They assumed the game was broken because they could not click &lt;q&gt;Submit&lt;/q&gt; despite having composed quite a few pages. They didn&#39;t realize they hadn&#39;t hit the requirement because they never created a checklist that told them what the requirement was. I debated warning players about this &lt;q&gt;error,&lt;/q&gt; but decided to let them discover it themselves. It reflects the feeling of writing too well for me to cut it. 
+Interestingly, skipping this step really hurt a lot of my playtesters. They assumed the game was broken because they could not click &lt;q&gt;Submit&lt;q&gt; despite having composed quite a few pages. They didn&#39;t realize they hadn&#39;t hit the requirement because they never created a checklist that told them what the requirement was. I debated warning players about this &lt;q&gt;error&lt;/q&gt;, but decided to let them discover it themselves. It reflects the feeling of writing too well for me to cut it. 
 ]
 [Research]&lt;research|
-(click: ?research)[ (replace: ?research)[Ruecker, et al. point to the necessity of clear goals and reflection in digital scholarship. Academic prototyping is one method for moving quickly while still maintaining rigor and creating knowledge:&lt;q&gt;That academic prototyping is an iterative process intended to produce knowledge rather than software should be reflected in the planning, management, and expectations of everyone involved.&lt;/q&gt; Too often we forget that making is thinking.]]</tw-passagedata><tw-passagedata pid="17" name="New Media Research 1" tags="" position="1598,551" size="100,100">Would you like to spend time studying an area that&#39;s new to you or work in any area that you&#39;re already pretty familiar?
+(click: ?research)[ (replace: ?research)[Ruecker, Adelaar, Brown, Dobson, Knechtel, Liepert, MacDonald, Peña, Radzikowska, Roeder, Sinclair, and Windsor point to the necessity of clear goals and reflection in digital scholarship. Academic prototyping is one method for moving quickly while still maintaining rigor and creating knowledge:&lt;q&gt;That academic prototyping is an iterative process intended to produce knowledge rather than software should be reflected in the planning, management, and expectations of everyone involved&lt;/q&gt; (2014). Too often we forget that making is thinking.]]</tw-passagedata><tw-passagedata pid="17" name="New Media Research 1" tags="" position="1598,551" size="100,100">Would you like to spend time studying an area that&#39;s new to you or work in any area that you&#39;re already pretty familiar?
 
 [Let&#39;s look into something new! (ten days)]&lt;new|{
 (click: ?new)[
@@ -447,7 +447,7 @@ Ugh.
 (display: &quot;Submit2&quot;)
 
 [Research]&lt;research|
-(click: ?research)[ (replace: ?research)[&lt;q&gt;We should not diminish the magnitude of what has changed. A writer—say it is myself, say it is right now—presses a key and completes a circuit and a spark of voltage flashes through a silicon chip to open a logic gate that illuminates a pattern of pixels on a liquid crystal display screen (could the terminology be any more wonderful?); the writer presses another key and the process repeats, or maybe that first letter disappears as the electircal charge briefly held within the system&#39;s solid-state memory rearranges itself into another configuration as the typo is corrected, or the writer settles on a word just a little more &lt;i&gt;juste&lt;/i&gt;. This is an extraordinary act, and it is a trivial act. It is also a material act&lt;/q&gt; (Kirschenbaum 247).]]</tw-passagedata><tw-passagedata pid="26" name="Write Flair" tags="" position="963,693" size="100,100">[Put in some flourishes! (one day, more fun, fewer pages)]&lt;flair|{
+(click: ?research)[ (replace: ?research)[&lt;q&gt;We should not diminish the magnitude of what has changed. A writer — say it is myself, say it is right now — presses a key and completes a circuit and a spark of voltage flashes through a silicon chip to open a logic gate that illuminates a pattern of pixels on a liquid crystal display screen (could the terminology be any more wonderful?); the writer presses another key and the process repeats, or maybe that first letter disappears as the electircal charge briefly held within the system&#39;s solid-state memory rearranges itself into another configuration as the typo is corrected, or the writer settles on a word just a little more &lt;i&gt;juste&lt;/i&gt;. This is an extraordinary act, and it is a trivial act. It is also a material act&lt;/q&gt; (Kirschenbaum 247).]]</tw-passagedata><tw-passagedata pid="26" name="Write Flair" tags="" position="963,693" size="100,100">[Put in some flourishes! (one day, more fun, fewer pages)]&lt;flair|{
 (click: ?flair)[
 (set: $time to it + 1)
 &lt;!-- flow code below, use for academic tasks --&gt;
@@ -496,7 +496,7 @@ Time to celebrate and [reflect]&lt;reflect| on the process.
 
 (set: $daysLeft to ($timeLimit - $time))
 (goto: &quot;Revise Print&quot;)
-]}</tw-passagedata><tw-passagedata pid="31" name="Endings" tags="" position="1703,1516" size="100,100">(hidden:)|commentary&gt;[
+]}</tw-passagedata><tw-passagedata pid="31" name="Endings" tags="" position="1704,1521" size="100,100">(hidden:)|commentary&gt;[
 &#39;&#39;Commentary&#39;&#39;
 This was the most difficult page to make. There are just so many moving parts. For example, here&#39;s the code for just the third bullet point of the report on your flow:
 &lt;p style = &quot;margin-left:40px&quot;&gt;&lt;q&gt;&#96;(if: $colleague is true)[(if: $nm is true)[Your choice of medium created the opportunity for immediate feedback, enabling flow. Talking to a colleague also gave you more immediate feedback.](else:)[Talking to a colleague gave you some immediate feedback, enabling flow.]](else-if: $nm is true)[Your choice of medium created the opportunity for immediate feedback, enabling flow.](else:)[Your choice of medium did not create the opportunity for immediate feedback, inhibiting flow. You also didn&#39;t find any other means of getting feedback.]&#96;&lt;/q&gt;&lt;/p&gt;
@@ -594,7 +594,7 @@ Also, you&#39;ve unlocked debug mode and director&#39;s commentary! Click [here]
 (if: $bor is 5)[(set: $borFIN to &quot;You were so bored.&quot;)](else-if: $bor is 4)[(set: $borFIN to &quot;You felt pretty bored. Find ways to enliven your work.&quot;)](else-if: $bor is 3)[(set: $borFIN to &quot;You were moderately bored by your labor.&quot;)](else-if: $bor is 2)[(set: $borFIN to &quot;While you had some fun, you have to admit you were a little bored.&quot;)](else-if: $bor is 1)[(set: $borFIN to &quot;You were not bored at all!&quot;)](else-if: $bor is 0)[(set: $borFIN to &quot;You seemed pretty engaged by your work!&quot;)]
 
 
-(if: $hap is 0)[(set: $hapFIN to &quot;unhappy&quot;)](else-if: $hap is 1)[(set: $hapFIN to &quot;Overall, this was not the happiest experience for you.&quot;)](else-if: $hap is 2)[(set: $hapFIN to &quot;I guess it could have been worse?&quot;)](else-if: $hap is 3)[(set: $hapFIN to &quot;You had just enough fun—and not one ounce more!&quot;)](else-if: $hap is 4)[(set: $hapFIN to &quot;You had a lot of fun!&quot;)](else-if: $hap is 5)[(set: $hapFIN to &quot;Your work didn&#39;t even feel like work! It was super fun!&quot;)]
+(if: $hap is 0)[(set: $hapFIN to &quot;unhappy&quot;)](else-if: $hap is 1)[(set: $hapFIN to &quot;Overall, this was not the happiest experience for you.&quot;)](else-if: $hap is 2)[(set: $hapFIN to &quot;I guess it could have been worse?&quot;)](else-if: $hap is 3)[(set: $hapFIN to &quot;You had just enough fun — and not one ounce more!&quot;)](else-if: $hap is 4)[(set: $hapFIN to &quot;You had a lot of fun!&quot;)](else-if: $hap is 5)[(set: $hapFIN to &quot;Your work didn&#39;t even feel like work! It was super fun!&quot;)]
 
 
 (if: $anx is 0)[(set: $anxFIN to &quot;You achieved kensho.&quot;)](else-if: $anx is 1)[(set: $anxFIN to &quot;You were pretty serene.&quot;)](else-if: $anx is 2)[(set: $anxFIN to &quot;Despite some difficulties, you stayed relatively calm.&quot;)](else-if: $anx is 3)[(set: $anxFIN to &quot;The whole process was a bit unsettling.&quot;)](else-if: $anx is 4)[(set: $anxFIN to &quot;Let&#39;s face it. You were anxious.&quot;)](else-if: $anx is 5)[(set: $anxFIN to &quot;Scholarship doesn&#39;t need to give you an existential crisis! But this article felt that way sometimes.&quot;)]
@@ -711,9 +711,9 @@ $chaFIN
 It&#39;s a lot easier to add new media at the end of a project to &lt;q&gt;enhance&lt;/q&gt; it than it is to consider medium from the beginning. I&#39;m sure some would accuse me of the reverse, simply adding scholarship at the end. The truth is, I was doing both simultaneously or at least alternatingly.  
 ]
 [Research]&lt;research|
-(click: ?research)[ (replace: ?research)[There are a number of current pushes for enhanced publication, &lt;q&gt;the development of Web venues that integrate the traditionally published book with the diverse materials related to an overall research project&lt;/q&gt; (Jankowski, et al.). I find such pushes toward &quot;enhanced publication&quot; somewhat flawed. While traditional print texts can be enhanced through addition, I worry that the very term &lt;q&gt;enhance&lt;/q&gt; undercuts the labor and transformation that such projects comprise.
+(click: ?research)[ (replace: ?research)[There are a number of current pushes for enhanced publication, &lt;q&gt;the development of Web venues that integrate the traditionally published book with the diverse materials related to an overall research project&lt;/q&gt; (Jankowski, Scharnhorst, Tatum, and Tatum, 2012). Referring to such projects as &quot;enhanced publication&quot; somewhat plays down their value and the value of multimodal scholarship more broadly. While traditional print texts can be enhanced through addition, I worry that the very term &lt;q&gt;enhance&lt;/q&gt; undercuts the labor and transformation that such projects comprise.
 
-Still, digital scholarship creates new opportunities for engaging audiences: &lt;q&gt;One key affordance of multimodal research is its ability to inspire and provoke diverse means of grasping and interpreting arguments&lt;/q&gt; (Christie). 
+Still, digital scholarship creates new opportunities for engaging audiences: &lt;q&gt;One key affordance of multimodal research is its ability to inspire and provoke diverse means of grasping and interpreting arguments&lt;/q&gt; (Christie, 2014). 
 
 Christie reviews current scholarship to discover various &lt;q&gt;calls for understanding the interactive nature of new media through their ability to model and communicate scholarly arguments, making interactivity not (uniquely) a function of interface, but rather one of interpretation and argument. In other words, interactivity in the context of multimodal knowledge representation means grappling with arguments and ideas, beyond simply manipulating images, text, and the like.&lt;/q&gt; 
 
@@ -928,17 +928,14 @@ This is the page is the most emotionally honest. The code sets up &#39;&#39;Trou
 [Research]&lt;research|
 (click: ?research)[ (replace: ?research)[Ruecker, et al define academic prototyping as &lt;q&gt;an attempt to reify an idea to a sufficient degree of fidelity that knowledge gained from the prototyping can be applied back to the idea. The necessary degree of fidelity will vary according to the kind of knowledge being pursued.&lt;/q&gt; Importantly, such prototyping must be rapid, to allow for multiple iterations: &lt;q&gt;a prototype is not a product in the sense that the end of an iteration is the stopping point at which production takes over from development. Instead, academic prototyping is inherently a process with multiple iterations that expand and enrich the value of the core thinking that prototypes are intended to embody for the purposes of interrogation.&lt;/q&gt; 
 
-I like to think that all scholarship is academic prototyping. In a long view, scholarly interventions are feedback mechanisms, but they&#39;re not that rapid. In my own experience, I&#39;ve found that new media scholarship offers more opportunities for immediate feedback to improve the prototype.]]</tw-passagedata><tw-passagedata pid="55" name="Publish NM" tags="" position="1599,1298" size="100,100">{(set: $flowRatio to ($ski / $cha))
+I like to think that all scholarship is academic prototyping. In a long view, scholarly interventions are feedback mechanisms, but they&#39;re not that rapid. In my own experience, I&#39;ve found that new media scholarship offers more opportunities for immediate feedback to improve the prototype.]]</tw-passagedata><tw-passagedata pid="55" name="Publish NM" tags="" position="1604,1298" size="100,100">{(set: $flowRatio to ($ski / $cha))
 (if: $flow is true)[(set: $flowCount to it + 1)]
 }Congratulations! The article has been accepted!
 
 Time to celebrate and [reflect]&lt;reflect| on the process.
 
 [Research]&lt;research|
-(click: ?research)[ (replace: ?research)[&lt;q&gt;New media cannot cannot survive if they simply are disruptive—new, singular, for the first time—for what matters is not first contact (the mythical patient Zero &lt;q&gt;responsible&lt;/q&gt; for a viral outbreak) but the many ones that follow. Most concisely, habituation and the new are th dreams and nightmares of new media companies&lt;/q&gt; (Chun 2).
-
-&lt;q&gt;Posthuman zoe/geo/techno-bound ethics is also a praxis, collectively desired, upheld and implemented, that aims at reworking and transforming negative affects and relations&lt;/q&gt; (Braidotti 27).
-]]
+(click: ?research)[ (replace: ?research)[&lt;q&gt;Posthuman zoe/geo/techno-bound ethics is also a praxis, collectively desired, upheld and implemented, that aims at reworking and transforming negative affects and relations&lt;/q&gt;. (Braidotti)]]
 (click: ?reflect)[(goto: &quot;reflect&quot;)](set: $feedback to false)(hidden:)|commentary&gt;[
 &#39;&#39;Commentary&#39;&#39;
 Now seems as good a time as any to talk about crunch. This is the evil flipside of flow. Crunch is a term used in video game development to describe overtime spread across more than a week. For video game development, crunch is situated around big release dates, typically the fall so that games will be available for Christmas. That means the typical 40-60 hour workweek becomes 80-100 for the entire summer. According to a recent study, more than half of developers reported that they were required to crunch with about a third of employees working 60-70 hours a week during crunch and one out of seven working more than 70 hours a week during crunch (Weststar, et al. 23). All this despite the fact that decades of research has shown that overtime is counterproductive and doesn&#39;t actually result in more getting done (Robinson). 
@@ -1019,19 +1016,18 @@ I regularly experienced the flow state described in the game, and was able to us
 
 While creating a scholarly article in just two weeks is far from ideal, it reflects the &lt;q&gt;game jam&lt;/q&gt; system popular in game development. In a game jam, developers are given a short period of time (typically 48 hours to a week) to create a game from scratch. Game jams can jumpstart creativity and help developers break through writer&#39;s block (similar to a writing retreat). However, they also depend on spending long hours over a limited time frame. As the commentary continues, I&#39;ll reflect on the similarities between this and &lt;q&gt;crunch&lt;/q&gt; in the games industry.
 ]
-The overall argument of the article is generally not apparent until you&#39;ve played the game at least twice. If you &quot;win&quot; the game by achieving certain productivity goals, you&#39;ll also unlock a debug mode that shows you the various systems and how your play affects them. Debug mode also enables you to see the creator&#39;s commentary. 
+The overall argument of the article is generally not apparent until you&#39;ve played the game at least twice. If you &quot;win&quot; the game by achieving certain productivity goals, you&#39;ll also unlock a debug mode that shows you the various systems and how your play affects them. Debug mode also enables you to see the creator&#39;s commentary. Without unlocking debug mode, a great deal of the scholarly value of this piece will be lost, so I encourage you to replay until you are able to achieve it. 
+
 (hidden:)|commentary&gt;[
 &#39;&#39;Commentary&#39;&#39;
 During testing, I was relieved to learn that the above was actually occuring for most players. The interactions created the argument, but that argument was only apparent after repeated playthroughs allowed more time for reflection.  
 ]
-It should be noted that this is an emergent game rather than a progressive one. Emergent games depend on a series of rules that create a multitude of outcomes; progression games feature branching narratives that lead linearly to one or more outcomes (Juul 67-83). Because Choose Your Own Adventure style games are typically progression games, it&#39;s important to realize that your actions are actually affecting a host of variables off screen (over 30). Some of those variables are represented in a status bar at the top of the screen, which you&#39;ll see on the next page. Keep an eye on that status bar, as it will constantly change and affect which choices are available. For example, to submit your article you will need to have written a set number of pages and you will need to not be overwhelmed with anxiety.
-
 Because this game also functions as a scholarly article, you&#39;ll find many opportunities to learn more about the research behind the game. Here&#39;s one now:
 
 [Click here to learn more about the research behind this page]&lt;research|
 {
 
-(click: ?research)[ (replace: ?research)[Bernard Stiegler argues that scholarly inquiry cannot be separated from its modes of communication: &lt;q&gt;just as certain kinds of writing actually liberate certain kinds of reflexivity (for example, certain kinds of linear, alphabetic writing, without which law, science, and in particular history would be inconceivable), so certain kinds of image-objects are doubtless destined to liberate reflexivity in the domains of the visible and of movement, just as alphabetic writing reveals the discrete characters of language&lt;/q&gt;(162). I find his argument surprisingly optimistic. We do not yet know what forms of knowing digital writing will unlock.]]
+(click: ?research)[ (replace: ?research)[Bernard Stiegler argues that scholarly inquiry cannot be separated from its modes of communication: &lt;q&gt;just as certain kinds of writing actually liberate certain kinds of reflexivity (for example, certain kinds of linear, alphabetic writing, without which law, science, and in particular history would be inconceivable), so certain kinds of image-objects are doubtless destined to liberate reflexivity in the domains of the visible and of movement, just as alphabetic writing reveals the discrete characters of language&lt;/q&gt;(2002, p. 162). I find his argument surprisingly optimistic. We do not yet know what forms of knowing digital writing will unlock.]]
 
 }
 These research links will always be formatted like this. They have no effect on gameplay. They&#39;re merely informative, often serving as a literature review. 
@@ -1049,9 +1045,8 @@ Well, enough preamble.
 </tw-passagedata><tw-passagedata pid="62" name="Title" tags="" position="1040,84" size="100,100">&#39;&#39;What We Do and Do Not Choose when We Choose to Publish: 
 Technological Affordances and Scholarly Practices&#39;&#39;
 
-Jason Helms
-Associate Professor
-TCU
+Author
+Affiliation
 
 [Introduction]&lt;intro|(click: ?intro)[(goto: &quot;Intro&quot;)]
 
@@ -1088,7 +1083,7 @@ The other reason is that scholars privilege traditional print-based media to suc
 (click: ?research)[(replace: ?research)[&lt;q&gt;When all else fails, use words. Why? Because when academics are neither trained to teach or read aesthetic modes of communication in the pursuit of scholarship, we fall back on the assumption that writing does not also merge form and content. And it most certainly does. We just often fail to see it that way&lt;/q&gt;. (Ball and Moeller 3).
 
 See also, Shipka.]]
-But the choice of medium is never binary—it&#39;s infinite.
+But the choice of medium is never binary — it&#39;s infinite.
 
 So maybe this would have been a better set of options:
 * [Photography]&lt;media1|
@@ -1144,15 +1139,12 @@ Regardless, it&#39;s time to find out what ending you got!
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Arbuckle, A., &amp;amp; Christie, A. (2015). Intersections between social knowledge creation and critical making.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;6&lt;/I&gt;(3)
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Ball, C., &amp;amp; Moeller, R. (2008). Converging the ASS[umptions] between U and ME; or how new media can bridge a Scholarly/Creative split in english studies.&lt;I&gt; Computers and Composition Online, &lt;/I&gt;Retrieved from &lt;a href=&quot;http://www2.bgsu.edu/departments/english/cconline/convergence/index.html&quot; TARGET=&quot;_blank&quot;&gt;http://www2.bgsu.edu/departments/english/cconline/convergence/index.html&lt;/a&gt;
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Bath, J. (2012). Tradition and transparency: Why book design still matters in the digital age.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;3&lt;/I&gt;(3)
-&lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Braidotti, R. (2017). &lt;I&gt;Posthuman, all too human the memoirs and aspirations of a posthumanist&lt;/I&gt; (The 2017 Tanner Lectures ed.). New Haven, CT: Yale University.
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Brown, S., &amp;amp; Simpson, J. (2014). The changing culture of humanities scholarship: Iteration, recursion, and versions in scholarly collaboration environments.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;5&lt;/I&gt;(4)
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Christie, A. (2014). Interdisciplinary, interactive, and online: Building open communication through multimodal scholarly articles and monographs.&lt;I&gt;5&lt;/I&gt;(4)
-&lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Chun, W. H. K. (2016). &lt;I&gt;Updating to remain the same: Habitual new media&lt;/I&gt;. Cambridge, MA: MIT P.
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Csikszentmihályi, M., Abuhamdeh, S., &amp;amp; Nakamura, J. (2005). Flow. In A. J. Elliot, &amp;amp; C. S. Dweck (Eds.), &lt;I&gt;Handbook of competence and motivation&lt;/I&gt; (pp. 598-608). New York: Guilford P.
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Galey, A., Cunningham, R., Nelson, B., Siemens, R., &amp;amp; Werstine, P. (2012). Beyond remediation: The role of textual studies in implementing new knowledge environments.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;3&lt;/I&gt;(1)
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Himanen, P. (2001). &lt;I&gt;The hacker ethic: A radical approach to the philosophy of business&lt;/I&gt;. New York: Random House.
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Jankowski, N., Scharnhorst, A., Tatum, C., &amp;amp; Tatum, Z. (2012). Enhancing scholarly publications: Developing hybrid monographs in the humanities and social sciences.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;4&lt;/I&gt;(1)
-&lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Juul, J. (2005). &lt;I&gt;Half-real: Video games between real rules and fictional worlds&lt;/I&gt;. Cambridge, MA: MIT P.
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Keramidas, K. (2016). Writing for publics, designing for platforms: Complexity and fluency in service of accessibility.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;7&lt;/I&gt;(2)
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;Kirschenbaum, M. G. (2016). &lt;I&gt;Track changes: A literary history of word processing&lt;/I&gt;. Cambridge, MA: Belknap P.
 &lt;p style=&quot;text-indent: -30px; margin-left: 30px;line-height: 2 &quot;&gt;O&amp;#39;Donnell, D. (2012). Move over: Learning to read (and write) with novel technology.&lt;I&gt; Scholarly and Research Communication, &lt;/I&gt;&lt;I&gt;3&lt;/I&gt;(4)
